@@ -33,8 +33,6 @@ gem 'jbuilder', '~> 2.5'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 gem "bulma-rails", "~> 0.7.2"
-#https://github.com/rweng/pry-rails
-gem 'pry-rails', :group => :development
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
 # https://github.com/plataformatec/simple_form
@@ -43,6 +41,7 @@ gem 'simple_form'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+  gem 'rspec-rails', '~> 3.8'
 end
 
 group :development do
@@ -54,10 +53,13 @@ group :development do
   gem 'spring-watcher-listen', '~> 2.0.0'
 
   # https://github.com/BetterErrors/better_errors
-  gem "better_errors"
-  gem "binding_of_caller"
+  gem 'better_errors'
+  gem 'binding_of_caller'
+  gem 'pry-rails'
   # https://github.com/guard/guard
   gem 'guard'
+  gem 'guard-livereload', '~> 2.5', require: false
+  gem 'better_errors'
 end
 
 group :test do

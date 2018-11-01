@@ -1,0 +1,27 @@
+<% content_for :page_title, @post.title %>
+
+<section class="section">
+  <div class="container">
+    <nav class="level">
+      <!-- Left side -->
+      <div class="level-left">
+        <p class="level-item">
+          <strong>Actions</strong>
+        </p>
+      </div>
+      <div class="level-right">
+        <p class="level-item">
+          <%= link_to "Edit Post", edit_post_path, class: "button is-link"  %>
+        </p>
+        <p class="level-item">
+          <%= link_to "Delete Post", post_path, method: :delete, class: "button is-danger", data: {confirm: "Are you sure?"} %>
+        </p>
+      </div>
+    </nav>
+    <hr />
+
+    <div class="content">
+      <%= @post.content %>
+    </div>
+  </div>
+</section>

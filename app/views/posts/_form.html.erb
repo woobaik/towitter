@@ -14,6 +14,6 @@
         <%= f.input :content, input_html: { class: 'textarea'}, wrapper: false, label_html: { class: 'label'} %>
       </div>
     </div>
-    <%= f.button :submit, @post.new_record? ? "Create a Post!": "Edit Post!", class: "button is-primary" %>
+    <%= f.button :submit, @post.new_record? ? "Create a Post!": "Update! Post!", class: "button is-primary" %>
   <% end %>
 </div>

@@ -37,6 +37,10 @@ gem "bulma-rails", "~> 0.7.2"
 gem 'bootsnap', '>= 1.1.0', require: false
 # https://github.com/plataformatec/simple_form
 gem 'simple_form'
+#https://rubygems.org/gems/gravatar_image_tag
+gem 'gravatar_image_tag', '~> 1.2'
+#https://github.com/plataformatec/devise
+gem 'devise'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
